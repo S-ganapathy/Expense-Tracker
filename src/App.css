@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inc_exp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+
+/* Transaction */
+.trans_box{
+  height: 230px;
+  width: 500px;
+  overflow: auto;
+  border-top: solid 15px white;
+}
+.transaction_div{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+
+.transaction_div div:nth-child(1){
+  width: 250px;
+  text-align: start;
+
+}
+.transaction_div div:nth-child(2){
+  width: 100px;
+  text-align: end;
+ 
+}
+.transaction_div div:nth-child(3){
+  width: 100px;
+  text-align: end;
+}
+
+.delete button{
+  height: 30px;
+  width: 90px;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  color: white;
+
+}
+
+.trans_box::-webkit-scrollbar{
+  display: none;
+}
+
+/* Add transaction */
+
+.add_form{
+  height: 180px;
+  width: 500px;
+  background-color: rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+
+}
+
+.items{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.add_form input:nth-child(1){
+  outline: none;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  width: 300px;
+  text-align: center;
+}
+
+.right_ele{
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  text-align: center;
+}
+
+.error{
+  border: 2px solid red;
+}
+
+
+/* media query*/
+
+@media only screen and (max-width:480px){
+
+  .header{
+    font-size: small;
+  }
+  .add_form{
+    height: 150px;
+    width: 100%;
+  }
+  .right_ele{
+    height: 30px;
+    width: 70px;
+  }
+
+  .add_form input:nth-child(1){
+    width: 200px;
+    height: 30px;
+  }
+
+  .trans_box{
+    width: 95%;
+    height: 200px;
+  }
+  .transaction_div div:nth-child(1){
+    width: 120px;
+    overflow: auto;
+  }
+  .transaction_div div:nth-child(2){
+    width: 90px;
+    text-align: center;
+  }
+  .transaction_div div:nth-child(3){
+    width: 70px;
+  }
+  .delete button{
+    width: 70px;
+  }
+}
